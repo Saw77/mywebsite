@@ -1,0 +1,280 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+</head>
+<body>
+
+  <section class="Products" id="Products">
+
+    <h1 class="heading"> LATEST PRODUCTS</h1>
+
+    <div class="box-container">
+      <div class="box">
+      <span class="discount">-10%</span>
+      <div class="image">
+        <img src="{% static 'w1.jpg' %}" alt="" height="550px" >
+
+       
+          <a href="#" class="btn">Buy Now</a>
+         
+      </div>
+      <div class="content">
+        <h3>Skin Caer Pot</h3>
+        <div class="price"> $12.99 <span class="di">$19.99</span></div>
+      </div>
+      </div>
+
+
+      <div class="box">
+        <span class="discount">-15%</span>
+        <div class="image">
+          <img src="{% static 'w2.jpg' %}" alt="" height="550px">
+          <div class="icons">
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Skin Caer Pot</h3>
+          <div class="price"> $20.99 <span class="di">$33.99</span></div>
+        </div>
+        </div>
+
+
+        <div class="box">
+          <span class="discount">-5%</span>
+          <div class="image">
+            <img src="{% static 'w3.jpg' %}" alt="" height="550px">
+            <div class="icons">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Skin Caer Pot</h3>
+            <div class="price"> $15.99 <span class="di">$20.99</span></div>
+          </div>
+          </div>
+
+
+          <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+              <img src="{% static 'w4.jpg' %}" alt="" height="550px" >
+              <div class="icons">
+                <a href="#" class="btn">Buy Now</a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Skin Caer Pot</h3>
+              <div class="price"> $10.99 <span class="di">$20.99</span></div>
+            </div>
+            </div>
+
+            <div class="box">
+              <span class="discount">-25%</span>
+              <div class="image">
+                <img src="{% static 'w5.jpg' %}" alt="" height="550px">
+                <div class="icons">
+                  <a href="#" class="btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Skin Caer Pot</h3>
+                <div class="price"> $16.99 <span class="di">$27.99</span></div>
+              </div>
+              </div>
+
+              <div class="box">
+                <span class="discount">-19%</span>
+                <div class="image">
+                  <img src="{% static 'w6.jpg' %}" alt="" height="550px" >
+                  <div class="icons">
+                    <a href="#" class="btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Skin Caer Pot</h3>
+                  <div class="price"> $10.99 <span class="di">$22.99</span></div>
+                </div>
+                </div>
+
+                <div class="box">
+                  <span class="discount">-20%</span>
+                  <div class="image">
+                    <img src="{% static 'mm.jpg' %}" alt="" height="550px">
+                    <div class="icons">
+                      <a href="#" class="btn">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h3>Skin Caer Pot</h3>
+                    <div class="price"> $19.99 <span class="di">$29.99</span></div>
+                  </div>
+                  </div>
+
+                  <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                      <img src="{% static 'ww.jpg' %}" alt="" height="550px" >
+                      <div class="icons">
+                        <a href="#" class="btn">Buy Now</a>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h3>Skin Caer Pot</h3>
+                      <div class="price"> $17.99 <span class="di">$20.99</span></div>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                      <span class="discount">-10%</span>
+                      <div class="image">
+                        <img src="{% static 'yy.jpg' %}" alt="" height="550px" >
+                        <div class="icons">
+                          <a href="#" class="btn">Buy Now</a>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3>Skin Caer Pot</h3>
+                        <div class="price"> $16.99 <span class="di">$20.99</span></div>
+                      </div>
+                      </div>
+                      
+                      <div class="box">
+                        <span class="discount">-15%</span>
+                        <div class="image">
+                          <img src="{% static 'di.jpg' %}" alt=""  height="550px">
+                          <div class="icons">
+                            <a href="#" class="btn">Buy Now</a>
+                           
+                          </div>
+                        </div>
+                        <div class="content">
+                          <h3>Skin Caer Pot</h3>
+                          <div class="price"> $19.99 <span class="di">$25.99</span> </div>
+                        </div>
+                       
+                      
+                  </div>
+    
+      </div>
+
+  
+  </section>
+
+
+  <style>
+    .heading{
+  color: #7d737d;
+  top: 0; left: 50; right: 50;
+  background: #ffffff;
+  padding: 2rem 9%;
+  display: flex;
+  text-align: center;
+  border: 0.3rem solid rgb(208, 202, 202);
+  box-shadow: 0 .5rem 1.5rem rgb(27, 25, 25);
+  
+
+    }
+
+    .Products .box-container{
+      display: flex;
+      flex-wrap: wrap;   
+      gap: 0.5rem
+
+    }
+    .Products .box-container .box{
+      flex: 1 1 30rem;
+      box-shadow: 0 .5rem 1.5rem rgb(27, 25, 25);
+      border-radius: .5rem;
+      border: 1rem solid rgb(244, 231, 231);
+      position: relative;
+    }
+
+    .Products .box-container .box .discount{
+      position: absolute;
+      top: 1rem; left: 1rem;
+      padding: .7rem 1rem;
+      font-size: 2rem;
+      color: var(--pink);
+      background: rgba(255, 51, 153, 05);
+      color: aliceblue;
+      z-index: 1;
+      border-radius: .5rem;
+    }
+    
+    .Products .box-container .box .image{
+      position: relative;
+      text-align: center;
+      padding-top: 2rem;
+      overflow: hidden;
+    }
+
+    .Products .box-container .box .image .img{
+      height: 25rem;
+
+    }
+
+    .Products .box-container .box:hover .image .img{
+      transform: scale(2.1);
+
+    }
+
+  
+    .btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #333;
+    transition: all 0.4s ease;
+
+  }
+
+  .btn:hover{
+    transform: translateY(-3px);
+  }
+
+  .Products .box-container .box .content{
+    padding: 2rem;
+    text-align: center; 
+
+  }
+  .content h3{
+    font-size: 2.5;
+    color: #333;
+
+  }
+
+  .price {
+    font-size: 2.5rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding: 1rem;
+    
+  }
+
+  .di{
+    font-size: 1.7rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+  }
+  </style>
+
+  
+</body>
+</html>
+
+{% endblock %} 

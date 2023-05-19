@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Skin Caer Website</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="home" id="home">
+
+  <div class="contt">
+    <h3>Skin Care</h3>
+    <span> Find Beauty And Define Yourself </span>
+    <p>Best Seller New Arrivale Body&bath Harcare Acne & Blemishes</p>
+    <a href="{% url 'product'%}" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<style>
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6em;
+  overflow-x: hidden;
+ }
+ section{
+  padding: 2rem 9%;
+ }
+
+ .home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(/static/ss_auto_x2.jpg) no-repeat;
+  background-size: cover ;
+  background-position: center;
+ }
+
+ .home .contt{
+  max-width: :50rem;
+ }
+ .home .contt h3{
+  font-size: 6rem;
+  color: #333;
+ }
+
+ .home .contt span{
+  font-size: 3.5rem;
+  color: var(--pink);
+  padding: 1rem 0;
+  line-height: 1.5;
+ }
+
+ .home .contt span{
+  font-size: 1.5rem;
+  color: #736a6a;
+  padding: 1rem 0;
+  line-height: 1.5;
+
+ }
+ .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  cursor:pointer ;
+  font-size: 1.7rem;
+ }
+
+ .btn:hover{
+  background: var(--pink);
+ }
+  @media (max-width:991px) {
+    
+    section{
+      padding: 2rem; }
+   
+
+    
+    
+  }
+ </style>
+</head>
+<body>
+  
+  
+</body>
+</html>
+ 
+
+
+{% endblock  %} 

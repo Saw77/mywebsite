@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+</head>
+<body>
+  <div class="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="flex">
+          <h2>About Us</h2>
+          <h3> Why Choose Us?</h3>
+          
+          <p>we believe that taking care of your skin 
+            is the ultimate act of self care. But we’re 
+            also real people with real skin issues of our own, 
+            so we know first-hand just how confusing skincare can be. 
+            From understanding why you just got hit with a major case of adult acne 
+            to figuring out whether an AHA or BHA is the secret to glowing skin, 
+            we’re here to help. We break down the buzziest ingredients, 
+            share helpful tips from dermatologists, take you into the lab with scientists and show you 
+            how to jade role like a pro</p>
+              
+            <a href="" class="btn">Learn More</a>
+
+            </div>
+            <div class="flex">
+              <img src="{% static 'uu.jpg' %}" alt="Image 1" >
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+
+<style>
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+  
+
+  .about-us{
+    padding: 80px pox;
+
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: o auto;
+    padding: 0 20px;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .about-us h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .about-us h3{
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 8px;
+  }
+
+  .about-us p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .about-us img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #333;
+    transition: all 0.4s ease;
+
+  }
+
+  .btn:hover{
+    transform: translateY(-3px);
+  }
+
+  @media  and(max-width: 768px) {
+    .row{
+      flex-direction: column;
+    }
+
+    .flex{
+      max-width: 100%;
+    }
+
+    .about-us h2{
+      font-size: 31px;
+    }
+    .about-us p{
+      font-size: 16px;
+    }
+    .btn{
+      font-size: 16px ;
+      padding: 8px 16px;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+
+
+
+
+
+</html>
+
+
+
+{% endblock  %} 
